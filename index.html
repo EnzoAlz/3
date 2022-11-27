@@ -1,3 +1,4 @@
+
 <style>
     p {
         background-color:antiquewhite;
@@ -5,18 +6,21 @@
 </style>
 
 <script>
-    function hello()
-    {
-        console.log("Hello, world");
-    }
+   function picture(){
+        var pic = "IMG_20211021_200338"
+        document.getElementById('bigpic').src = pic.replace('...', '...');
+   }
 </script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Make Enzo Feel Feelings</title>
 </head>
-<body>
-<h1 style="background-color:blue">I would like to make a website that displays cat pictures at random and lets you choose how many.</h1>
-<p>That, or I want to make a text rp ame like the early text rpgs like the oregon trail or Colosal Cave Adventure. </p>
-<p>Click <a href="http://google.com">here</a> to visit Google.</p>
-<button type="button" class="btn btn-primary">This is a bootstrap button</button>
-<a href="https://getbootstrap.com/" class="btn btn-primary">This is a link that looks like a button.</a>
 
+
+<body>
+<h1 style="background-color:blue">I want to feel somethhing for once. Please help me.</h1>
+<img id="bigpic" src="bigpic" />
+
+<button onclick="picture()">Enlarge</button>
 </body>
 </html>

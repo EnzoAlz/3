@@ -7,16 +7,9 @@
 
 <script>
    function picture(){
-        var pic = "IMG_20211021_200338"
+        var pic = "IMG_20211021_200338.jpg"
         document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
    }
-   function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
 </script>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -28,9 +21,6 @@ function closeForm() {
 <h1 style="background-color:blue">I want to feel somethhing for once. Please help me.</h1>
 <img id="bigpic" src="bigpic" />
 
-<button onclick="picture()">Make me feel!</button> 
-
-<button2> class="open-button" onclick="openForm()">Make me feel!</button2>
+<button onclick="picture()">Make me feel!</button>
 </body>
 </html>
-

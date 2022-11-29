@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Title</title>
+
+    <style>
+        p {
+            background-color:antiquewhite;
+        }
+    </style>
+
+    <script>
+        function hello()
+        {
+            var textbox = document.getElementById('textbox');
+            var heading = document.getElementById('heading');
+            if (textbox.value == "7")
+            {
+                heading.innerHTML= "Wow! You guessed " + textbox.value + ". You are now a registered phsycic.";
+            }
+            else{
+                heading.innerHTML= "The number " + textbox.value + " is WRONG. You're not a psycic.";
+            }
+            
+            heading.style = "background-color:red";
+        }
+    </script>
+</head>
+<body>
+    <h1 id="heading" style="background-color:blue">This is a heading</h1>
+    <p>I'm thinking of a number from 1-10, guess it!: </p><input id="textbox" type="text"><button onclick="hello();">Greet</button>
+
+
+
+</body>
+</html>
